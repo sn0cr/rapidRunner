@@ -4,15 +4,14 @@ apply plugin:'application'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 String projectName = 'io.github.sn0cr.rapidRunner'
-version = '0.9'
+version = '1.0'
 mainClassName = projectName + ".Main"
 
-String projectState = "preAlpha"
+String projectState = "release"
 String versionName = version + "-" +  projectState
 String versionAttribute = projectName + "-Version"
 
 sourceCompatibility = 1.8
-version = '0.1'
 sourceSets {
     main {
         java {
@@ -38,11 +37,6 @@ buildscript {
 repositories {
     mavenCentral()
     jcenter()
-    maven {
-            url 'http://oss.jfrog.org/artifactory/plugins-release'
-        }
-
-
 }
 
 dependencies {
