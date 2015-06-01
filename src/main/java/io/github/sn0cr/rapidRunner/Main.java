@@ -1,5 +1,5 @@
 /**
- * This file is part of rapidRunner
+ * This file is part of rapidRunner <https://github.com/sn0cr/rapidRunner>
  * Copyright (C) 2015 Christian Wahl
  *
  * This program is free software: you can redistribute it and/or modify
