@@ -4,7 +4,7 @@ apply plugin:'application'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 String projectName = 'io.github.sn0cr.rapidRunner'
-version = '1.0'
+version = '1.0.1'
 mainClassName = projectName + ".Main"
 
 String projectState = "release"
