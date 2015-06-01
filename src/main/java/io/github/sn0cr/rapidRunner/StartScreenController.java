@@ -350,9 +350,9 @@ public class StartScreenController extends Application {
     if (!workingDirectoryString.isEmpty()) {
       this.workingDirectory.setText(testDirectoryPath);
       this.workingDirectoryPath = Paths.get(workingDirectoryString);
+      this.heading.setText(String.format(StartScreenController.HEADING,
+          this.workingDirectoryPath.toFile().getName()));
     }
-    this.heading.setText(String.format(StartScreenController.HEADING,
-        this.workingDirectoryPath.toFile().getName()));
   }
 
 
