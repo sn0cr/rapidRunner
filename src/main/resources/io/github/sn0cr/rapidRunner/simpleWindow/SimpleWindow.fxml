@@ -1,0 +1,62 @@
+<!-- 
+  This file is part of rapidRunner <https://github.com/sn0cr/rapidRunner>
+  Copyright (C) 2015 Christian Wahl
+ 
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+ 
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this program. If not, see <http://www.gnu.org/licenses/>.
+ 
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane hgap="10.0" prefHeight="270.0" prefWidth="400.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.sn0cr.rapidRunner.simpleWindow.SimpleWindowController">
+  <columnConstraints>
+    <ColumnConstraints minWidth="-Infinity" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeCWD" text="Change" GridPane.columnIndex="2" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Workingdirectory (bin-folder)" />
+      <Label fx:id="cwdLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Unset" GridPane.columnIndex="1" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Testdirectory" GridPane.rowIndex="1" />
+      <Label fx:id="testDirectoryLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Unset" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeTestDirectory" text="Change" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="Stdin-File extension" GridPane.rowIndex="3" />
+      <Label text="Stdout-File extension" GridPane.rowIndex="4" />
+      <TextField fx:id="inputFileExtension" text="in" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+      <TextField fx:id="outputFileExtension" text="out" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+      <Label text="Testfile pattern" GridPane.rowIndex="2" />
+      <TextField fx:id="testFilePattern" text="sample*" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+      <Label text="No output" GridPane.columnSpan="2147483647" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS" />
+      <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#runTests" text="RUN MY TESTS!" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>
