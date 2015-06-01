@@ -1,10 +1,13 @@
 # [rapidRunner](https://github.com/sn0cr/rapidRunner/releases/latest)
+Download at https://github.com/sn0cr/rapidRunner/releases]
+
+-----
 The main interface:
 ![A screenshot of the main interface](https://raw.githubusercontent.com/sn0cr/rapidRunner/develop/screenshot1.png)
 --------------------------------------------
 ## Setup:
   - [ ] The directory with all your test files (one for the input and one for the expected output(-> with the same name but a   different extension))
-  - [ ] The directory your command should be run (aka "workingdirectory")
+  - [ ] The directory in which your command should be run (aka "workingdirectory")
   - [ ] The commandline to run your command
   - [ ] The name and extensions of your testsamples 
 All set? - Then your ready to go! :clap:
